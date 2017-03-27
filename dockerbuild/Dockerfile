@@ -24,7 +24,7 @@ RUN mkdir -p /var/lock/apache2 /var/run/apache2 /var/run/sshd /var/log/superviso
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 # Install the code and set up flask/node
-RUN cd /opt && wget https://github.com/terrabyteian/driversity-project/archive/master.zip
+RUN cd /opt && wget https://github.com/terrabyteian/kls-project/archive/master.zip
 RUN cd /opt && unzip master.zip
 RUN mongod --fork --logpath /var/log/mongod.log && cd /opt/driversity-project-master/backend && python load_csv_into_mongo.py
 
