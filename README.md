@@ -13,6 +13,7 @@ Steps to install:
 This docker image contains the following:
 
 * The programming assignments under <project_dir>/programming
+* The database assignments under <project_dir>/database
 * an instance of mongo
 * a supervisord conf file that runs mongo
 
