@@ -1,4 +1,4 @@
-# Driversiti Project Dockerfile
+# KLS Project Dockerfile
 
 # Base Image
 FROM ubuntu:16.04
@@ -26,7 +26,6 @@ COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 # Install the code and set up flask
 RUN cd /opt && wget https://github.com/terrabyteian/kls-project/archive/master.zip
 RUN cd /opt && unzip master.zip
-RUN mongod --fork --logpath /var/log/mongod.log && cd /opt/driversity-project-master/backend && python load_csv_into_mongo.py
 
 # expose frontend and start up supervisor
 EXPOSE 5000
