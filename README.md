@@ -7,8 +7,10 @@ Steps to install:
 
 1. Download this project's .zip on a Linux machine
 2. With docker installed, `cd <project_dir>/dockerbuild/`
-3. `docker build --no-cache -t driversiti-project:latest .` (This will build an image for this project)
-4. `docker run -p 5000:5000 -i -t driversiti-project`
+3. `docker build --no-cache -t kls-project:latest .` (This will build an image for this project)
+4. `docker run -i -t kls-project bash`
+5. Now inside container, run `supervisord`. This will start mongo
+6. Set up the virtualenvs and run the code
 
 This docker image contains the following:
 

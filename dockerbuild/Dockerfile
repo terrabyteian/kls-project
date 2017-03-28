@@ -29,4 +29,3 @@ RUN cd /opt && unzip master.zip
 
 # expose frontend and start up supervisor
 EXPOSE 5000
-CMD ["/usr/bin/supervisord"]
