@@ -21,4 +21,4 @@ This docker image contains the following:
 
 To be able to fully use the assignments, wherever you see a requirements.txt file, you should run `virtualenv virtualenv`,`source virtualenv/bin/activate`,`pip install -r requirements.txt`. 
 
-For the web application, run app.py after setting up your virtualenv. If you navigate that tree you will see the sample files as well as the python script that can randomly generate the files.
+For the web application, run loader.py then app.py after setting up your virtualenv. If you navigate that tree you will see the sample files as well as the python script that can randomly generate the files.
