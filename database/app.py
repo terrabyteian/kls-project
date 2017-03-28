@@ -72,5 +72,5 @@ def index():
     return getPreservedForm(request.args) +  getTable(gt=gt)
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host="0.0.0.0")
 
